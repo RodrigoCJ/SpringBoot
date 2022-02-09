@@ -11,9 +11,9 @@ spring:
       on-profile: development
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: ${DB_URL:jdbc:postgresql://motty.db.elephantsql.com:5432/hhjogumk?currentSchema=treinamento}
-    username: ${DB_USER:hhjogumk}
-    password: ${DB_PASSWORD:7lfTGsNslOJfqFG6pQhFQk7h5KWbMN1w}
+    url: ${DB_URL:jdbc:postgresql://kesavan.db.elephantsql.com:5432/ztrxvivb?currentSchema=treinamento}
+    username: ${DB_USER:ztrxvivb}
+    password: ${DB_PASSWORD:cnsYvDPkJwhz0SsylQPAxEeJeowu6kv4}
     hikari:
       connection-timeout: 30000
       idle-timeout: 600000

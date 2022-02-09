@@ -13,7 +13,7 @@ public class Fazenda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
-    int id;
+    long id;
 
     @Column(name = "DESCRICAO")
     String descricao;
@@ -27,11 +27,9 @@ public class Fazenda {
     @Column(name = "LONGITUDE")
     float longitude;
 
-
-    //TODO: verificar
     @ManyToOne
+    @JoinColumn(name = "ID_FAZENDEIRO")
     @JsonManagedReference
-    @JoinTable(name = "FAZENDEIRO",
-            joinColumns={@JoinColumn(name = "ID", referencedColumnName = "ID_FAZENDEIRO")})
-    private int idFazendeiro;
+    private Fazendeiro fazendeiro;
+
 }
